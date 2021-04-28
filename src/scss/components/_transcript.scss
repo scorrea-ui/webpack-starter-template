@@ -1,0 +1,63 @@
+.c-transcript {
+  width: 100%;
+  &__wrapper {
+    align-items: center;
+    background-color: #ffbc03;
+    border-radius: 1rem;
+    display: flex;
+    font-size: 1.2rem;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    max-width: 86.7rem;
+    min-height: 6.5rem;
+    padding: 1.8rem 3.6rem;
+    position: relative;
+    width: 100%;
+  }
+
+  & form {
+    position: relative;
+  }
+
+  & input {
+    appearance: none;
+    border: none;
+    border-radius: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0.3rem 4rem 0.3rem 1.4rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &[type='submit'] {
+      background-color: transparent;
+      background-color: #0048e0;
+      background-image: url('../img/send.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 1.5rem;
+      height: 3rem;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      text-indent: -99999rem;
+      width: 5rem;
+    }
+
+    &::placeholder {
+      color: #d4d4d4;
+    }
+  }
+
+  & p {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-right: 2.6rem;
+  }
+}

@@ -1,0 +1,90 @@
+.c-hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+  max-height: 51rem;
+
+  &__video {
+    height: 100%;
+    margin-bottom: 1rem;
+    max-width: 90rem;
+    min-height: 30rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @include iota-breakpoint(md) {
+      min-height: 40rem;
+    }
+
+    & iframe {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &__transcript {
+    align-items: center;
+    background-color: #ffbc03;
+    background-image: url('../img/download_transcript.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    justify-content: center;
+    min-height: 12rem;
+    position: relative;
+    width: 100%;
+
+    & form {
+      position: relative;
+    }
+
+    & input {
+      appearance: none;
+      border: none;
+      border-radius: 1rem;
+      font-size: 1.4rem;
+      margin: 0 auto;
+      margin-bottom: 0.7rem;
+      max-width: 18rem;
+      min-height: 2rem;
+      padding: 0.3rem 4rem 0.3rem 1.4rem;
+      position: relative;
+      width: 100%;
+
+      &[type='submit'] {
+        background-color: transparent;
+        background-color: #0048e0;
+        background-image: url('../img/send.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 2.2rem;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        text-indent: -99999rem;
+        width: 3rem;
+      }
+
+      &::placeholder {
+        color: #d4d4d4;
+      }
+    }
+
+    & p {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  }
+}

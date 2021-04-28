@@ -1,0 +1,11 @@
+.c-section {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    margin-bottom: 3rem;
+
+    & img {
+      margin-right: 2.1rem;
+    }
+  }
+}

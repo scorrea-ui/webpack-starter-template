@@ -1,0 +1,40 @@
+.c-social {
+  align-items: center;
+  background: #fff;
+  bottom: 0;
+  display: flex;
+  filter: drop-shadow(0 1rem 3rem rgba(0, 0, 0, 0.1));
+  height: 6.5rem;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+
+  @include iota-breakpoint(md) {
+    height: 19.5rem;
+    top: 12.5rem;
+    width: 10rem;
+  }
+
+  & ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    @include iota-breakpoint(md) {
+      flex-direction: column;
+    }
+
+    & li {
+      margin-bottom: 0;
+      margin-right: 2rem;
+
+      @include iota-breakpoint(md) {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

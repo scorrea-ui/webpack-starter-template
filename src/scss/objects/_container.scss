@@ -1,0 +1,12 @@
+$iota-objs-container-namespace: 'container';
+$iota-objs-container-gutter-default: (
+  null: 1rem,
+  md: 0,
+);
+$iota-objs-container-gutter-extra: (
+  flush: 0,
+);
+$iota-objs-container-size-default: 90rem;
+$iota-objs-container-size-extra: null;
+
+@import 'node_modules/iotacss/objects/container';

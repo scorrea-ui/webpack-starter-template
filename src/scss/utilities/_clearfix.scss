@@ -1,0 +1,7 @@
+.u-clear {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
